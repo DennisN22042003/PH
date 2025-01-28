@@ -1,0 +1,87 @@
+type Query {
+
+    # Queries related to photgraphers
+    photographerById(id: ID!): Photographer
+    photographers: [Photographer]
+
+    # Queries related to photographer portfolios
+    portfolioById(id: ID!): Portfolio
+    portfolios: [Portfolio]
+
+    # Queries related to photos
+    photoById(id: ID!): Photo
+    Photos: [Photo]
+
+    # Queries related to bookings
+    bookingById(Id: ID!): Booking
+    Bookings: [Booking]
+
+    # Queries related to reviews
+    reviewsById(id: ID!): Review
+    Reviews: [Review]
+
+    # Queries related to users
+    userById(id: ID!): User
+    Users: [User]
+}
+
+type Photographer {
+    id: ID!
+    name: String!
+    email: String!
+    phone: String!
+    address: String!
+    county: String!
+    city: String!
+    zip: String!
+    portfolio: Portfolio
+    photos: [Photo]
+    reviews: [Review]
+}
+
+type Portfolio {
+    id: ID!
+    photographer: Photographer
+    photos: [Photo]
+}
+
+type Photo {
+    id: ID!
+    photographer: Photographer
+    portfolio: Portfolio
+    url: String!
+    description: String!
+    reviews: [Review]
+}
+
+type Booking {
+    id: ID!
+    user: User
+    photographer: Photographer
+    date: String!
+    time: String!
+    location: String!
+    status: String!
+}
+
+type Review {
+    id: ID!
+    user: User
+    photographer: Photographer
+    photo: Photo
+    rating: Double!
+    comment: String!
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    phone: String!
+    address: String!
+    county: String!
+    city: String!
+    zip: String!
+    bookings: [Booking]
+    reviews: [Review]
+}
