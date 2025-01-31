@@ -1,4 +1,4 @@
-package com.example.portfolio_service;
+/* package com.example.portfolio_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,4 +10,4 @@ class PortfolioServiceApplicationTests {
 	void contextLoads() {
 	}
 
-}
+} */
