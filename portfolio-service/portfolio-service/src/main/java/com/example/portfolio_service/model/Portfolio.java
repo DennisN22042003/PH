@@ -5,8 +5,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import java.time.LocalDate;
-import java.time.LocalTime;
 
 // SIMPLE MODEL FOR TESTING THE PORTFOLIO CLASS LOCALLY
 public class Portfolio {
