@@ -1,10 +1,12 @@
 package com.example.user_service.model;
 
+/*
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+ */
 
 // SIMPLE MODEL FOR TESTING THE USER SERVICE LOCALLY
 public class User {
@@ -24,7 +26,7 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public Long getId() {
+    public Long getById() {
         return id;
     }
     public String getUserName() {

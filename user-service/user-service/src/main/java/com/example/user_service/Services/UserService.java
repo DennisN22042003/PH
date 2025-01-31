@@ -28,6 +28,6 @@ public class UserService {
     }
 
     public Optional<User> getUserById(Long id) {
-        return users.stream().filter(b -> b.getId().equals(id)).findFirst();
+        return users.stream().filter(b -> b.getById().equals(id)).findFirst();
     }
 }
