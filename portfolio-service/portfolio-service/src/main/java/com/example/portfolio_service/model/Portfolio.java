@@ -11,14 +11,14 @@ import java.time.LocalTime;
 // SIMPLE MODEL FOR TESTING THE PORTFOLIO CLASS LOCALLY
 public class Portfolio {
     private Long id;
-    private String photographer;
-    private String category;
+    private String photographerName;
+    private String eventType;
     private String description;
 
-    public Portfolio(Long id, String photographer, String category, String description) {
+    public Portfolio(Long id, String photographerName, String eventType, String description) {
         this.id = id;
-        this.photographer = photographer;
-        this.category = category;
+        this.photographerName = photographerName;
+        this.eventType = eventType;
         this.description = description;
     }
 
@@ -26,10 +26,10 @@ public class Portfolio {
         return id;
     }
     public String getPhotographer() {
-        return photographer;
+        return photographerName;
     }
     public String getCategory() {
-        return category;
+        return eventType;
     }
     public String getDescription() {
         return description;
